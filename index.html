@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bishal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./myphoto.jpeg"/>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+       rel="stylesheet"/>
+    <script
+      async
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script async src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">Mr. <span>Bishal</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#websites">Websites</a>
+        <a href="#testimonials">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Bishal Behera</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>
+          Welcome to my portfolio.I am a passionate web developer focused on building modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, and Python.I enjoy creating clean interfaces, writing efficient code, and solving real-world problems.I have worked on project such as real-time chat applications, a student study portal and complete management systems.I love turning ideas into reliable digital solutions.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/bishal-behera-356a3b265" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Bishalbehera" target="_blank"><i class="bx bxl-github"></i></a>
+          <!-- <a href="https://www.instagram.com/uditha_vithanage" target="_blank"><i class="bx bxl-instagram-alt"></i></a> -->
+          <a href="https://x.com/bishal_beh51282?t=Y-BC8r-qdmRCTtwj0pWcZw&s=09" target="_blank"><i class="bx bxl-twitter"></i></a>
+        </div>
+
+        <div class="btn-group">
+           <a href="mailto:beherabishal769@gmail.com" class="hire-btn btn" target="_blank">Hire Me</a>
+          <a href="#contact" class="btn">Contact</a>
+          <a href="./BISHAL BEHERA(New_CV).pdf" download class="btn">Download CV</a>
+          
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="./myphoto.jpeg" alt="" />
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019 - 2020</div>
+          <div class="timeline-content">
+            <h3>Secondary Education</h3>
+            <p>
+              Damodar High School<br/>
+Board Of Secondary Education, Odisha<br/>
+<b>10th</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020 - 2022</div>
+          <div class="timeline-content">
+            <h3>Higher Secondary Education(Science)</h3>
+            <p>
+              Tagore +2 science and Residential College<br/>
+Council of Higher Secondary Education, Odisha<br/>
+<b>Plus Two(+2)</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 - 2026</div>
+          <div class="timeline-content">
+            <h3>Under Graduate(Computer Science & Enginnering)</h3>
+            <p>
+              Nalanda Institute Of Technology<br/>
+Biju Patnaik University of Technology (BPUT), Odisha<br/>
+<b>Bachelor Of Technology(B.tech)</b>
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 - Present</div>
+          <div class="timeline-content">
+            <h3>University</h3>
+            <p>
+              Informatics Institute of Technology (IIT)<br/>
+BSc (Hons) Computer Science
+            </p>
+          </div>
+        </div> -->
+
+
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Web Development</h4>
+            <p>
+             I offer web development services focused on building responsive and user-friendly websites and applications. I work on both front-end and back-end development using modern technologies, creating clean, secure, and scalable solutions. I enjoy collaborating on projects and continuously improving to deliver meaningful digital experiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>UI / UX Design</h4>
+            <p>
+              I offer UI/UX design services that focus on creating intuitive and visually appealing digital experiences. By understanding client goals and target audiences, I deliver user-friendly interfaces and optimized user flows to enhance engagement and drive business success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="websites" id="websites">
+      <div class="websites-box">
+        <h2 class="heading"><span>MY</span> Websites</h2>
+        <div class="websites-wrapper" id="websitesList">
+          <script>
+            // Array of website details
+            const websites = [
+              { name: "Student Study Portal", img: "./student_study.png", url: "https://bishalbehera.pythonanywhere.com/" },
+              { name: "E-commerce", img: "./e_commerce.png", url: "https://bishalbehera.github.io/e_commerce/" },
+              { name: "Hospitalmgmt System", img: "./Hospital_mgmt.png", url: "https://bishalhospitalmgmt.pythonanywhere.com/" },
+              { name: "Demo_portfolio", img: "./portfolio.png", url: "https://bishalbehera.github.io/Demo_personalportfolio/" }
+            ];
+          
+            // Generate and insert website items dynamically
+            document.getElementById("websitesList").innerHTML = websites
+              .map(website => `
+                <div class="website-item">
+                  <a href="${website.url}" target="_blank">
+                    <img src="${website.img}" alt="${website.name}" />
+                    <h2>${website.name}</h2>
+                  </a>
+                </div>
+              `)
+              .join("");
+          </script>    
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-box">
+        <h2 class="heading">Skills</h2>
+    
+        <div class="websites-wrapper" id="skillsList">
+          <script>
+            // Array of skills with image paths
+            const skills = [
+              { name: "HTML", img: "./html.png" },
+              { name: "CSS", img: "./css.png" },
+              { name: "JavaScript", img: "./js.png" },
+              { name: "React JS", img: "./react.png" },
+              { name: "Bootstrap", img: "./Bootstrap2.png" },
+              { name: "Tailwind CSS", img: "./tailwind.png" },
+              { name: "Python", img: "./python2.png" },
+              { name: "MySQL", img: "./my-sql2.png" },
+              { name: "Django", img: "./django.jpg" },
+              { name: "Java", img: "./java.png" },
+              { name: "JDBC", img: "./jdbc.png" },
+              { name: "C", img: "./c.png" }
+            ];
+          
+            // Generate and insert skill items using map()
+            document.getElementById("skillsList").innerHTML = skills
+              .map(skill => `
+                <div class="website-item">
+                  <img src="${skill.img}" alt="${skill.name}" />
+                  <h2>${skill.name}</h2>
+                </div>
+              `)
+              .join("");
+          </script>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form id="ContactForm">
+        <div class="input-group">
+          <div class="input-box">
+            <input id="name" type="text" placeholder="Full Name" />
+            <input id="email" type="email" placeholder="Enter Your Email" />
+          </div>
+          <div class="input-box">
+            <input id="phone" type="number" placeholder="Phone Number" />
+            <input id="title" type="text" placeholder="Subject" />
+          </div>
+        </div>
+
+        <div class="input-group-2">
+          <textarea
+            name=""
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://wa.me/9348354438" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100078313152755&mibextid=ZbWKwL" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/invites/contact/?igsh=8e913ybcnb02&utm_content=plp3jlt" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://www.linkedin.com/in/bishal-behera-356a3b265" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">About Me</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Skills</a>
+        </li>
+      </ul>
+      <p class="copyright">© <script>document.write(new Date().getFullYear());</script> Bishal Behera | All Right Reserved</p>
+  </body>
+</html>
